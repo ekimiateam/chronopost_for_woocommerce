@@ -1,0 +1,2 @@
+=== 1.0.3
+- fix depuis nouvelle affectation des methodes de livraisons par Woocommerce

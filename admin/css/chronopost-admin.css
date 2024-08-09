@@ -1,0 +1,478 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+.toplevel_page_chronopost #wpbody-content h1 {
+  margin-top: 20px;
+  width: 339px;
+  height: 77px;
+  text-indent: -9999px;
+  background: transparent url(../img/logo.png);
+}
+
+@media (min-width: 1024px) {
+  .column-shipping-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .column-shipping-grid .package-dimensions {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+  }
+
+	.column-shipping-grid .package-dimensions .column-dimensions {
+		width: calc(50% - 5px);
+	}
+}
+
+.column-insurance .sub-field,
+.column-parcels .sub-field,
+.column-dimensions .sub-field {
+  margin-bottom: 7px;
+}
+
+.column-insurance label,
+.column-parcels label,
+.column-dimensions label {
+  font-size: 12px;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.column-parcels .sub-field input[type="number"],
+.column-dimensions .sub-field input[type="number"] {
+  width: 100%;
+}
+
+.post-type-shop_order #chrono_meta_box .wp-list-table .column-dimensions .title {
+  display: block;
+  margin: 3px 0;
+  text-align: center;
+  font-style: italic;
+}
+
+.post-type-shop_order #chrono_meta_box h4 {
+  margin: 0;
+}
+
+.post-type-shop_order #chrono_meta_box .wp-list-table tbody td,
+.post-type-shop_order #chrono_meta_box .wp-list-table tbody th {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  line-height: 1.4;
+}
+
+.post-type-shop_order #chrono_meta_box .wp-list-table tbody td:first-child {
+  padding-left: 1em;
+}
+
+.post-type-shop_order #chrono_meta_box .wp-list-table tbody td:last-child {
+  padding-right: 1em;
+}
+
+ .woocommerce table.form-table input.regular-input.small-text {
+   width: 65px;
+ }
+
+ .woocommerce .wickedpicker__title {
+   display: none;
+ }
+
+ .form-table td fieldset  #woocommerce_chronoprecise_delivery_date_day_nbr ~ * {
+   margin-left: 5px !important;
+ }
+
+ .text-addition {
+   display: inline-block;
+   margin: .25em 0 .5em!important;
+ }
+
+ .woocommerce_page_wc-settings .closingslotsrows .add.button::before {
+  font-family: WooCommerce;
+  speak: none;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  margin-right: .618em;
+  content: "";
+  text-decoration: none;
+}
+
+.appointmentrows tr:nth-child(odd) td,
+.closingslotsrows tr:nth-child(odd) td {
+  background-color: #f9f9f9;
+}
+
+.wp-core-ui #shipment-list td input,
+.wp-core-ui #shipment-list td select
+{
+  max-width: 100%;
+}
+
+.wp-core-ui #shipment-list th.column-dimensions {
+  width: 60px;
+}
+.wp-core-ui #shipment-list .column-dimension input {
+  width: 55px;
+}
+.wp-core-ui #shipment-list .button.button-small {
+  margin-bottom: 5px;
+}
+
+.wp-core-ui #shipment-list .column-parcels {
+  width: 100%;
+}
+
+.wp-core-ui .column-insurance select {
+  width: 100%;
+}
+
+.wp-core-ui #shipment-list .column-parcels input {
+  max-width: 100%;
+}
+
+.wp-core-ui #shipment-list .label-printing a,
+.wp-core-ui #shipment-list .return-printing a {
+  padding: 4px;
+  height: auto;
+  white-space: normal;
+  text-align: center;
+  width: 100%;
+  line-height: 1.4 !important;
+}
+
+.wp-core-ui #shipment-list .column-order_date {
+  max-width: 100px;
+}
+
+.button-outer-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.button-outer-wrapper:hover .button-sub-wrapper {
+  display: block;
+}
+
+.button-sub-wrapper{
+  display: none;
+  position: absolute;
+  min-width: 200px;
+  z-index: 77;
+  margin-top: -5px;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 8px;
+  max-height: 300px;
+  overflow: auto;
+}
+
+.wp-core-ui .button-delete {
+  background: #ba0008;
+  border-color: #ba0008 #99002d #99002d;
+  box-shadow: 0 1px 0 #99002d;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 -1px 1px #99002d,
+  1px 0 1px #99002d,
+  0 1px 1px #99002d,
+  -1px 0 1px #99002d;
+}
+
+.wp-core-ui .button-delete.hover,
+.wp-core-ui .button-delete:hover,
+.wp-core-ui .button-delete.focus,
+.wp-core-ui .button-delete:focus {
+  background: #c9001e;
+  border-color: #b00239;
+  color: #fff;
+}
+
+.button-sub-wrapper a {
+  display: block;
+  line-height: 22px;
+  padding: 0 8px 1px;
+  font-size: 11px;
+}
+
+.chrono-tracklist {
+  font-size: 10px;
+}
+
+.has-sub > a:after {
+  content: "\f140";
+  font: normal 20px/1 dashicons;
+  speak: none;
+  display: inline-block;
+  padding: 0;
+  top: -3px;
+  left: -2px;
+  color: #444;
+  line-height: 10px;
+  position: relative;
+  vertical-align: middle;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-decoration: none !important;
+  color: #444;
+}
+
+.has-sub {
+  position: relative;
+}
+
+.has-sub > ul {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  max-width: 200px;
+  background: #fff;
+  border: 1px solid #e1e1e1;
+  margin: 0;
+  padding: 7px 10px;
+  -webkit-box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+  float: none;
+  z-index: 999;
+}
+
+.has-sub > ul li {
+  display: block;
+}
+
+.has-sub:hover > ul {
+  display: block;
+}
+
+.woocommerce_page_wc-settings .woocommerce .subsubsub > li > a[href*="&section=chrono"] {
+  display: none;
+}
+
+#insurance_amount {
+  width: 100%;
+}
+
+[class*=chronopost] .hint {
+  padding: 10px 5px;
+  background-color: #f4f9eb;
+  margin: 0 0 15px 0;
+}
+.account-title {
+  font-size: 1.1em; font-weight: bold;
+  padding: 3px 0 0 10px;
+}
+
+[class*=chronopost] .form-table:not(.show-table):first-of-type {
+  display: none;
+}
+.toplevel_page_chronopost #wpbody-content > form {
+  margin-right: 20px;
+}
+
+[class*=chronopost] .form-table {
+  background: #fff;
+  border: 1px solid #ebebeb;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+[class*=chronopost] h2:not(.full-width) {
+  margin-top: 1em;
+  float: left;
+}
+
+.chronopost-notice h2 {
+  float: none;
+}
+
+[class*=chronopost] .button.clean-section {
+  margin-top: 15px;
+  float: right;
+}
+
+.toplevel_page_chronopost .form-table th,
+.chronopost_page_chronopost-imports .form-table th {
+  padding-left: 10px;
+}
+
+.form-table td.testWSLoginResult {
+  padding: 0;
+}
+
+.testWSLogin + .spinner,
+.chrono-alert + .spinner {
+  float: none;
+}
+
+.chrono-alert {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 0 0 7px  0;
+  font-size: 13px;
+}
+
+.chrono-alert-success {
+  color: #46b450;
+}
+
+.chrono-alert-error {
+  color: #dc3232;
+}
+
+.form-table .saturday-slot-table td {
+  padding: 0 10px 0 0;
+}
+
+.saturday-slot-table input {
+  height: 28px;
+  line-height: 1;
+}
+#chrono_meta_box input {
+  max-width: 100%;
+}
+#chrono_meta_box .parcels-dimensions label {
+  display: flex;
+}
+#chrono_meta_box .parcels-dimensions label span,
+#chrono_meta_box .parcels-dimensions label input
+{
+  flex-direction: row;
+  width: 50%;
+}
+
+#chrono_meta_box .package-dimensions {
+  padding: 5px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.chronopost-import-trackings {
+  padding: 20px;
+  border: 1px solid #ebebeb;
+}
+.chronopost-import-trackings input {
+  margin-left: 20px;
+}
+.chronopost-import-trackings label {
+  display: block;
+  padding: 5px 0;
+  margin-bottom: 10px;
+}
+
+.chronopost-settings-account.status-error .account-title {
+  color: #ba0008;
+}
+
+.chronopost-settings-account.status-error .account-title:after {
+  content: " (contrat invalide)";
+  font-weight: normal;
+}
+
+.chronopost-settings-account .form-table td,
+.chronopost-settings-account .form-table th {
+  vertical-align: top;
+}
+
+.chronopost-settings-account .form-table th {
+  min-width: 210px;
+}
+
+.chronopost-settings-account.status-error .form-table {
+  border-color: #ba0008;
+  background: #fae1e1;
+}
+
+.return-action-wrapper {
+	position: relative;
+}
+
+.return-action-wrapper:hover {
+	z-index:10;
+}
+
+.return-action-wrapper > a {
+	display: block !important;
+	padding: 4px 40px 4px 4px !important;
+	white-space: inherit !important;
+	line-height: 1.4 !important;
+}
+
+.return-action-wrapper .return-action {
+	position: absolute;
+	top: 0;
+	bottom: 5px;
+	right: 0;
+	width: 36px;
+}
+
+.return-action-wrapper .return-action ul li {
+	font-size: 11px !important;
+}
+
+.return-action-wrapper .return-action .chrono-icon-plus {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	width: 24px;
+	height: 24px;
+	background: #fff;
+	border-radius: 50%;
+	cursor: pointer;
+	border: 1px solid #ccd0d4;
+}
+
+.return-action-wrapper .return-action .chrono-icon-plus::before,
+.return-action-wrapper .return-action .chrono-icon-plus::after {
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 2px;
+	background: #000;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+}
+
+.return-action-wrapper .return-action .chrono-icon-plus::after {
+	-webkit-transform: translate(-50%,-50%) rotate(90deg);
+	transform: translate(-50%,-50%) rotate(90deg);
+}
+
+.wp-core-ui #shipment-list .label-printing .return-action a,
+.wp-core-ui #shipment-list .return-printing .return-action ul a {
+	display: block;
+	padding: 0;
+	text-align: left;
+	font-size: 11px;
+}
+
+.return-action-wrapper ul {
+	position: absolute;
+	margin: 0;
+	right: 0;
+	top: 100%;
+	display: none;
+	min-width: 180px;
+	padding: 5px 10px;
+	background: #fff;
+	border: 1px solid #ccd0d4;
+	box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.return-action-wrapper .return-action:hover ul {
+	display: block;
+}
